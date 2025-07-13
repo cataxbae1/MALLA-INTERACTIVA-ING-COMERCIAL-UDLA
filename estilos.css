@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #d63384;
+}
+
+#avance-container {
+  background: #f3c6d3;
+  border-radius: 10px;
+  height: 30px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#avance-barra {
+  background: #d63384;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+#avance-texto {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+button#limpiar-btn {
+  background: #ff69b4;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+button#limpiar-btn:hover {
+  background: #e055a0;
+}
+
+.titulo {
+  margin-top: 30px;
+  font-size: 1.4em;
+  color: #b3005e;
+  border-bottom: 2px solid #d63384;
+  padding-bottom: 5px;
+}
+
+.ramo {
+  display: inline-block;
+  width: 260px;
+  margin: 10px;
+  padding: 12px;
+  background: #ffe6f0;
+  border: 2px solid #d63384;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.ramo.aprobado {
+  background: #ffc0cb;
+  border-color: #c2185b;
+}
+
+.ramo.bloqueado {
+  background: #f3f3f3;
+  color: #aaa;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
